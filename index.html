@@ -13,7 +13,7 @@
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="navbar-brand logo" href="#">
+            <div class="navbar-brand logo" href="/">
                 <img src="images/VSLogoBluePinkV2.png">
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
@@ -23,7 +23,7 @@
                 <div class="nav">
                     <ul class="navbar-nav nav-menu">
                         <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
+                            <a class="nav-link" href="/projects.html">Projects</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
@@ -137,49 +137,57 @@
     </div>
     <div class="projects" id="projects">
         <hr class="line-break">
-        <h2 class="heading">My Projects</h2>
-        <div class="projects-container row">
-            <div class="project-card animate-on-scroll col-lg-4 col-md-6 col-sm-12">
-                <div class="project">
-                    <img src="images/hotels-project.png" alt="Project 1 Screenshot" class="project-image">
-                    <h3>LA Hotels</h3>
-                    <p>Designed the website for LA Hotels primarily focusing on the reservation system, allowing users to look at available rooms, reserve, add amenities and checkout.</p>
-                    <small class="project-tech">Python, Flask, HTML/CSS, Stripe</small><br>
-                    <div class="text-center">
-                        <a href="https://github.com/Vaish1405/380Project" class="github-button" target="_blank">
-                            <span class="code-icon">&lt;/&gt;</span> View Source Code
-                        </a>
+        <div class="projects-header text-center">
+            <h2 class="heading d-inline-block">Current Projects</h2>
+        </div>
+        <div class="container projects-container">
+            <div class="row">
+                <div class="project-card animate-on-scroll col-lg-4 col-md-6 col-sm-12">
+                    <div class="project">
+                        <img src="images/asl.png" alt="ASL Converter Screenshot" class="project-image">
+                        <h3>ASL Converter</h3>
+                        <p>Real-time ASL-to-text using CNN, OpenCV & Mediapipe. Achieved 92% accuracy. Presented at CSUNPosium & CSU Research Competition.</p>
+                        <small class="project-tech">Python, TensorFlow, OpenCV</small>
+                        <div class="text-center">
+                            <a href="https://github.com/Vaish1405/aslConverter" class="github-button">
+                                <span class="code-icon">&lt;/&gt;</span>  View Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll col-lg-4 col-md-6 col-sm-12">
+                    <div class="project">
+                        <img src="images/colco.png" alt="Cacao Disease Project Screenshot" class="project-image">
+                        <h3>Disease Detection</h3>
+                        <p>Image classification using CNN and image preprocessing for accurate disease detection. Achieved 80% accuracy.</p>
+                        <small class="project-tech">TensorFlow, OpenCV, scikit-learn</small>
+                        <div class="text-center">
+                            <a href="https://github.com/Vaish1405/colco-ml" class="github-button">
+                                <span class="code-icon">&lt;/&gt;</span>  View Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll col-lg-4 col-md-6 col-sm-12">
+                    <div class="project">
+                        <img src="images/levelUp.png" alt="levelUp Screenshot" class="project-image">
+                        <h3>LevelUp</h3>
+                        <p>Developed ADA-compliant, ADHD-friendly app to learn ASL and build habits by reward based learning. Submitted in SS12 Hackathon project.</p>
+                        <small class="project-tech">ReactNative, TypeScript, MongoDB</small>
+                        <div class="text-center">
+                            <a href="https://github.com/vicat0ria/cow-cow-cow" class="github-button">
+                                <span class="code-icon">&lt;/&gt;</span> View Source Code</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="project-card animate-on-scroll col-lg-4 col-md-6 col-sm-12">
-                <div class="project">
-                    <img src="images/interger-project.png" alt="Project 2 Screenshot" class="project-image">
-                    <h3>Int. Conversion</h3>
-                    <p>Backend development for the conversion website for integers, floats etc. Features include converting numbers from various standards to binary and vice versa.</p>
-                    <small class="project-tech">HTML/CSS, JavaScript, Bootstrap</small><br>
-                    <div class="text-center">
-                        <a href="https://github.com/smf-steve/integers-conversion-encoding" class="github-button" target="_blank">
-                            <span class="code-icon">&lt;/&gt;</span> View Source Code
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card animate-on-scroll col-lg-4 col-md-6 col-sm-12">
-                <div class="project">
-                    <img src="images/cow-project.png" alt="Project 3 Screenshot" class="project-image">
-                    <h3>cow-cow-cow</h3>
-                    <p>Developed a game for people with visual impairments. The game uses audio cues to find the hidden target. Difficulties and obstacles increase with the level.</p>
-                    <small class="project-tech">Python, Flask, HTML/CSS, JavaScript</small><br>
-                    <div class="text-center">
-                        <a href="https://github.com/vicat0ria/cow-cow-cow" class="github-button" target="_blank">
-                            <span class="code-icon">&lt;/&gt;</span> View Source Code
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>      
+        </div>
+        <div class="view-all-wrapper mt-3 text-center">
+            <a href="projects.html" class="btn btn-outline-primary view-all-btn">View All Projects</a>
+        </div>
     </div>
+    
+    </main>
     <div class="contact" id="contact">
         <hr class="line-break">
         <h2 class="heading">Contact Me</h2>
