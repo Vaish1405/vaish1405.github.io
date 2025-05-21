@@ -81,12 +81,8 @@
 
 ## 📄 License
 
-The design, content, and original assets of this portfolio website are licensed under the [Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/).  
-You are free to share and adapt the materials for non-commercial purposes **with proper credit**.
-
-The source code (HTML/CSS/JS) is licensed under the [MIT License](https://opensource.org/licenses/MIT), allowing reuse with attribution.
-
-For any use beyond these terms, please contact me.
+The content and design of this portfolio are licensed for non-commercial use with attribution.  
+See the [LICENSE](./LICENSE) file for full details.
 
 ---
 
