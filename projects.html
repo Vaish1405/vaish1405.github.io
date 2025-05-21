@@ -2,60 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>All Projects – Vaishnavi Sen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaishnavi Sen</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-    <link href="projects.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/VSLogoBluePinkV2.png">
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand logo" href="/">
-                <img src="images/VSLogoBluePinkV2.png" alt="Logo">
+                <img src="images/VSLogoBluePinkV2.png">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto nav-menu">
-                    <li class="nav-item"><a class="nav-link" href="index.html#projects">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
-                </ul>
+                <div class="nav">
+                    <ul class="navbar-nav nav-menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav contact-icons">
+                        <li class="nav-item">
+                            <a class="nav-link default1" href="https://github.com/Vaish1405" target="_blank">
+                                <img src="images/github.png" alt="Github">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link default2" href="https://www.linkedin.com/in/vaishnavi-sen-405a7a1bb/" target="_blank">
+                                <img src="images/linkedin.png" alt="Linkedin">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
-    <div class="projects">
-        <div class="container">
-            <h2 class="heading text-center mb-3" style="color:#FF006E;"><strong>AI / Machine Learning</strong></h2>
+    <div class="projects" id="projects">
+        <h2 class="heading text-center" style="color:#FF006E;"><strong>AI / Machine Learning</strong></h2>
+        <div class="container projects-container">
             <div class="row">
-                <div class="project-card col-lg-4 col-md-6 col-sm-12 visible">
-                  <div class="project">
-                    <img src="images/asl.png" class="project-image" alt="ASL Project">
-                    <h3>ASL Converter</h3>
-                    <p>Real-time ASL-to-text using CNN, OpenCV & Mediapipe. Achieved 92% accuracy.</p>
-                    <small class="project-tech">Python, TensorFlow, OpenCV</small>
-                    <div class="text-center">
-                      <a href="https://github.com/Vaish1405/aslConverter" class="github-button" target="_blank">
-                        &lt;/&gt; View Source Code
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="project-card col-lg-4 col-md-6 col-sm-12 visible">
+                <!-- ASL Converter -->
+                <div class="project-card col-lg-4 col-md-6 col-sm-12 animate-on-scroll">
                     <div class="project">
-                        <img src="images/colco.png" alt="Cacao Disease Project Screenshot" class="project-image">
-                        <h3>Disease Detection</h3>
-                        <p>Image classification using CNN and image preprocessing for accurate disease detection. Achieved 80% accuracy.</p>
-                        <small class="project-tech">TensorFlow, OpenCV, scikit-learn</small>
+                        <img src="images/asl.png" alt="ASL Converter Screenshot" class="project-image">
+                        <h3>ASL Converter</h3>
+                        <p>Real-time ASL-to-text using CNN, OpenCV & Mediapipe. Achieved 92% accuracy. Presented at CSUNPosium & CSU Research Competition.</p>
+                        <small class="project-tech">Python, TensorFlow, OpenCV</small>
                         <div class="text-center">
-                            <a href="https://github.com/Vaish1405/colco-ml" class="github-button">
-                                <span class="code-icon">&lt;/&gt;</span>  View Source Code
+                            <a href="https://github.com/Vaish1405/aslConverter" class="github-button" target="_blank">
+                                <span class="code-icon">&lt;/&gt;</span> View Source Code
                             </a>
                         </div>
                     </div>
                 </div>
+    
+                <!-- Disease Detection -->
+                <div class="project-card col-lg-4 col-md-6 col-sm-12 animate-on-scroll visible">
+                    <div class="project">
+                        <img src="images/colco.png" alt="Disease Detection Screenshot" class="project-image">
+                        <h3>Disease Detection</h3>
+                        <p>Image classification using CNN and image preprocessing for accurate disease detection. Achieved 80% accuracy.</p>
+                        <small class="project-tech">TensorFlow, OpenCV, scikit-learn</small>
+                        <div class="text-center">
+                            <a href="https://github.com/Vaish1405/colco-ml" class="github-button" target="_blank">
+                                <span class="code-icon">&lt;/&gt;</span> View Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- AI Text Detection -->
                 <div class="project-card col-lg-4 col-md-6 col-sm-12 visible">
                     <div class="project">
                       <img src="images/ai-text.png" class="project-image" alt="ASL Project">
@@ -66,7 +90,12 @@
                     </div>
                 </div>
             </div>
-            <h2 class="heading text-center mt-5 mb-3" style="color:#3A86FF;"><strong>Web Development</strong> </h2>
+        </div>
+    </div>
+
+    <div class="projects" id="projects">
+        <h2 class="heading text-center mt-5 mb-3" style="color:#3A86FF;"><strong>Web Development</strong> </h2>
+        <div class="container projects-container">
             <div class="row">
                 <div class="project-card col-lg-4 col-md-6 col-sm-12 visible">
                     <div class="project">
@@ -91,13 +120,17 @@
                     </div>
                 </div>
             </div>
-            <h2 class="heading text-center mt-5 mb-3" style="color:#AA4AF2;"><strong>Games & Tools</strong></h2>
+        </div>
+    </div>
+    <div class="projects" id="projects">
+        <h2 class="heading text-center mt-5 mb-3" style="color:#AA4AF2;"><strong>Games & Tools</strong></h2>
+        <div class="container projects-container">
             <div class="row">
                 <div class="project-card col-lg-4 col-md-6 col-sm-12 visible">
                     <div class="project">
                         <img src="images/cow-project.png" alt="cow-cow-cow" class="project-image">
                         <h3>cow-cow-cow</h3>
-                        <p>Game designed for visually impaired users using sound cues and increasing difficulty levels.</p>
+                        <p>Developed a game for visually impaired users to follow audio cues to locate the hidden target. Won 3rd place in 2024 SS12 Hackathon project.</p>
                         <small class="project-tech">Python, Flask, JavaScript</small>
                         <div class="text-center">
                             <a href="https://github.com/vicat0ria/cow-cow-cow" class="github-button" target="_blank">&lt;/&gt; View Source Code</a>
@@ -108,7 +141,7 @@
                     <div class="project">
                         <img src="images/levelUp.png" alt="levelUp Screenshot" class="project-image">
                         <h3>LevelUp</h3>
-                        <p>Developed ADA-compliant, ADHD-friendly app to learn ASL and build habits by reward based learning. Submitted in SS12 Hackathon project sponsored by Northrop Grumman.
+                        <p>Developed ADA-compliant, ADHD-friendly app to learn ASL and build habits by reward based learning. Submitted in 2025 SS12 Hackathon project.
                         </p>
                         <small class="project-tech">ReactNative, TypeScript, MongoDB</small>
                         <div class="text-center">
@@ -117,14 +150,25 @@
                     </div>
                 </div>
             </div>
-              
-        <div class="text-center my-5">
-            <a href="/" class="btn btn-outline-primary">Back to Home</a>
         </div>
     </div>
-
+    <div class="text-center my-5">
+        <a href="/" class="btn btn-outline-primary">Back to Home</a>
+    </div>
     <footer>
         <p>&copy; 2024 Vaishnavi Sen. All Rights Reserved.</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+            if (window.location.hash) {
+                window.location.replace('/');
+            }
+        });
+    </script>
 </body>
 </html>
