@@ -37,7 +37,7 @@ header {
     width: 35px;
     height: 35px;
 }
-.nav {
+.nav-wrapper {
     display: flex;
     align-items: center;
     margin-left: auto;
@@ -343,7 +343,7 @@ header {
 }
 
 .projects {
-    background-color: #06071b;
+    background-color: #000814;
     margin: 0 auto;
 }
 .projects-container {
@@ -434,6 +434,10 @@ header {
 
 .contact {
     margin-top: 100px;
+    background-color: #06071b;
+}
+
+.contact-heading {
     text-align: center;
     color: rgba(255, 255, 255, 0.7);
 }
@@ -458,7 +462,7 @@ header {
     width: 100%;
     margin: 0;
     padding: 15px 20px;
-    background-color: #06071b;
+    background-color: #000814;
     color: white;
     border: none;
     border-bottom: 1px solid rgb(219, 219, 219, 0.3);
